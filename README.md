@@ -18,6 +18,3 @@ This project improves efficiency and reliability by automating the process, ensu
 - **/docs/** → Contains the technical report on the Google Scholar API.  
 - **/src/** → Will contain Java code developed in future stages.  
 - **README.md** → Project overview and documentation.  
-
-## Access
-The repository is configured with the necessary permissions so that the Digital NAO team can review, track progress, and collaborate throughout the project.
