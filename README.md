@@ -1,5 +1,3 @@
-# Scholar-Integration-Automation
-
 # Scholar Integration Automation
 
 ## Project Purpose
