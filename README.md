@@ -18,3 +18,23 @@ This project improves efficiency and reliability by automating the process, ensu
 - **/docs/** → Contains the technical report on the Google Scholar API.  
 - **/src/** → Will contain Java code developed in future stages.  
 - **README.md** → Project overview and documentation.  
+
+# Google Scholar Author MVC Project
+
+This Java project implements a simple MVC application to fetch author information from Google Scholar using SerpApi.
+
+## Structure
+- **Model:** Represents author data.
+- **View:** Displays author search results.
+- **Controller:** Handles API requests and updates the view.
+
+## How to run
+1. Clone the repository.
+2. Add your SerpApi API key in AuthorController.java
+3. Run Main.java
+4. Change `author_id` to the target author ID.
+
+## Notes
+- Uses Java 11+ HttpClient for GET requests.
+- Uses Jackson for JSON parsing.
+- Exceptions are handled for API errors.
