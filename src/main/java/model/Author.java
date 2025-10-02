@@ -6,7 +6,7 @@ public class Author {
     private int citations;
     private String profileUrl;
 
-    public Author() {} // Empty constructor for JSON mapping
+    public Author() {}
 
     public Author(String name, String affiliation, int citations, String profileUrl) {
         this.name = name;
@@ -15,13 +15,17 @@ public class Author {
         this.profileUrl = profileUrl;
     }
 
+    // Getters and setters
     public String getName() { return name; }
-    public String getAffiliation() { return affiliation; }
-    public int getCitations() { return citations; }
-    public String getProfileUrl() { return profileUrl; }
-
     public void setName(String name) { this.name = name; }
+
+    public String getAffiliation() { return affiliation; }
     public void setAffiliation(String affiliation) { this.affiliation = affiliation; }
+
+    public int getCitations() { return citations; }
     public void setCitations(int citations) { this.citations = citations; }
+
+    public String getProfileUrl() { return profileUrl; }
     public void setProfileUrl(String profileUrl) { this.profileUrl = profileUrl; }
 }
+
