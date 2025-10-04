@@ -29,10 +29,37 @@ This Java project implements a simple MVC application to fetch author informatio
 - **Controller:** Handles API requests and updates the view.
 
 ## How to run
-1. Clone the repository.
-2. Add your SerpApi API key in AuthorController.java
-3. Run Main.java
-4. Change `author_id` to the target author ID.
+ Installation
+1. Clone the Repository
+bashgit clone https://github.com/yourusername/scholar-integration.git
+cd scholar-integration
+2. Set Up Database
+Option A: MySQL
+sqlCREATE DATABASE scholar_db;
+Option B: SQLite (No setup required - auto-creates file)
+3. Configure Database Connection
+Edit DatabaseManager.java:
+java// For MySQL
+private static final String DB_URL = "jdbc:mysql://localhost:3306/scholar_db";
+private static final String DB_USER = "your_username";
+private static final String DB_PASSWORD = "your_password";
+
+// For SQLite
+private static final String DB_URL = "jdbc:sqlite:scholar_articles.db";
+4. Add API Key
+
+Sign up at SerpAPI
+Get your free API key (100 searches/month)
+Edit ScholarAPIService.java:
+
+javaprivate static final String SERPAPI_KEY = "api_key";
+5. Install Dependencies
+If using Maven:
+bashmvn clean install
+Or let IntelliJ automatically download dependencies from pom.xml
+6. Run the Application
+bashmvn exec:java -Dexec.mainClass="Main"
+Or run Main.java directly from IntelliJ
 
 ## Notes
 - Uses Java 11+ HttpClient for GET requests.
