@@ -31,8 +31,6 @@ This Java project implements a simple MVC application to fetch author informatio
 ## How to run
  Installation
 1. Clone the Repository
-bashgit clone https://github.com/yourusername/scholar-integration.git
-cd scholar-integration
 2. Set Up Database
 Option A: MySQL
 sqlCREATE DATABASE scholar_db;
